@@ -1,1 +1,13 @@
-<p>movies-list works!</p>
+<div class="container-fluid">
+
+  <ul>
+    <div class="row">
+      <div class="col-8">
+        <div class="card-group">
+          <app-movie-details *ngFor="let movieEl of movies; let i = index" [movie]="movieEl"
+            [index]="i"></app-movie-details>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>
