@@ -1,13 +1,12 @@
 <div class="container-fluid">
 
-  <ul>
-    <div class="row">
-      <div class="col-8">
-        <div class="card-group">
+    <div class="row d-flex flex-wrap">
+      <div class="col">
+        <div class="card-group justify-content-center">
           <app-movie-details *ngFor="let movieEl of movies; let i = index" [movie]="movieEl"
             [index]="i"></app-movie-details>
         </div>
       </div>
     </div>
-  </ul>
+
 </div>
