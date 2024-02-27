@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthResponseData, AuthService } from './auth.service';
+import { AuthResponseData, AuthService } from '../../services/auth.service';
 import { NgForm } from '@angular/forms';
 import { Observable } from 'rxjs';
 

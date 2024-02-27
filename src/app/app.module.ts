@@ -14,13 +14,13 @@ import { AdminMoviesComponent } from './components/admin/admin-movies/admin-movi
 import { AdminCustomersComponent } from './components/admin/admin-customers/admin-customers.component';
 import { AdminRentalsComponent } from './components/admin/admin-rentals/admin-rentals.component';
 import { MovieEditComponent } from './components/admin/admin-movies/movie-edit/movie-edit.component';
-import { AuthComponent } from './auth/auth.component';
+import { AuthComponent } from './components/auth/auth.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { AuthInterceptorService } from './auth/auth-interceptor.service';
+import { AuthInterceptorService } from './components/auth/auth-interceptor.service';
 import { MoviesResolverService } from './services/movies-resolver.service';
 import { DataStorageService } from './services/data-storage.service';
 import { MoviesService } from './services/movies.service';
-import { AuthService } from './auth/auth.service';
+import { AuthService } from './services/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
