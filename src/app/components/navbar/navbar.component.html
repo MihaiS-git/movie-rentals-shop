@@ -14,10 +14,16 @@
           <a class="nav-link" routerLink="/customers">Customers</a>
         </li>
         <li routerLinkActive="active" class="nav-item">
-          <a class="nav-link" routerLink="/signup">Sign Up</a>
+          <a class="nav-link" routerLink="/signup" *ngIf="!isAuthenticated">Sign Up</a>
         </li>
         <li routerLinkActive="active" class="nav-item">
-          <a class="nav-link" routerLink="/signin">Sign In</a>
+          <a class="nav-link" routerLink="/signin" *ngIf="!isAuthenticated">Sign In</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" *ngIf="isAuthenticated" (click)="onLogout()">Log Out</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+          <a class="nav-link" routerLink="/admin">Admin</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
